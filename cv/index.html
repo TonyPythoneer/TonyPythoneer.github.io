@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="cv">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
         <title>Dash - Modern Resume Template</title>
         <meta name="description" content="Here goes the description">
         <meta name="author" content="author name">
+
+        <!-- Javascript -->
+        <script src="./js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./cv.module.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./main-menu/main-menu.directive.js" type="text/javascript" charset="utf-8"></script>
+
 
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -30,7 +36,7 @@
         <div class="theme-bg"></div>
 
         <!-- MAIN MENU -->
-
+        <main-menu></main-menu>
 
         <div id="scroll-top" class="scroll-top hidden">
             <a href="#">
