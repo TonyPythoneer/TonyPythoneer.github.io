@@ -1,22 +1,5 @@
 <ul id="main-menu" class="main-menu hidden" >
-    <li class="menu-item menu-black" ng-repeat="item in ctrl.menuItems">
-        <a ng-href="{{item.href}}"><i class="icon menu sprite"></i></a>
+    <li ng-repeat="item in ctrl.menuItems" ng-class="ctrl.getMenuItemColor(item.color)">
+        <a ng-href="{{item.href}}">        <i ng-class="ctrl.getMenuItemIcon(item.iconType)"></i></a></a>
     </li>
-    <!--
-    <li class="menu-item menu-black">
-        <a href="#*"><i class="icon menu sprite"></i></a>
-    </li>
-    <li class="menu-item menu-red">
-        <a href="#profile-tab"><i class="icon profile sprite"></i></a>
-    </li>
-    <li class="menu-item menu-keppel">
-        <a href="#resume-tab"><i class="icon resume sprite"></i></a>
-    </li>
-    <li class="menu-item menu-yellow">
-        <a href="#portfolio-tab"><i class="icon portfolio sprite"></i></a>
-    </li>
-    <li class="menu-item menu-blue">
-        <a href="#contact-tab"><i class="icon contact sprite"></i></a>
-    </li>
-    -->
 </ul>
