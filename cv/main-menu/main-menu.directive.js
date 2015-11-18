@@ -43,21 +43,21 @@
 
         ////
 
-        function getMenuItemIcon(iconType){
-            var class_ = {
+        function getIconClass(iconType){
+            var classes = {
                 icon: true,
                 sprite: true
             };
-            class_[iconType] = true;
-            return class_;
+            classes[iconType] = true;
+            return classes;
         };
 
-        function getMenuItemColor(color){
-            var class_ = {
+        function getMenuColorClass(color){
+            var classes = {
                 "menu-item": true,
             };
-            class_["menu-" + color] = true;
-            return class_;
+            classes["menu-" + color] = true;
+            return classes;
         };
 
     };

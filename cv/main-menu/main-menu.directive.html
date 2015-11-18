@@ -1,5 +1,5 @@
 <ul id="main-menu" class="main-menu hidden" >
-    <li ng-repeat="item in ctrl.menuItems" ng-class="ctrl.getMenuItemColor(item.color)">
-        <a ng-href="{{item.href}}">        <i ng-class="ctrl.getMenuItemIcon(item.iconType)"></i></a></a>
+    <li ng-repeat="item in ctrl.menuItems" ng-class="ctrl.getMenuColorClass(item.color)">
+        <a ng-href="{{item.href}}"><i ng-class="ctrl.getIconClass(item.iconType)"></i></a></a>
     </li>
 </ul>
