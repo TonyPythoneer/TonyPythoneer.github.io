@@ -11,8 +11,15 @@
         <meta name="front-end-development-skills" content="javascript typescript angularjs">
         <!-- Javascript -->
         <script src="./js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+
         <script src="./cv.module.js" type="text/javascript" charset="utf-8"></script>
+
         <script src="./components/main-menu.directive.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./components/visible-tab-header.directive.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./components/jquery-libs.directive.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="./resume/resume-tab.directive.js" type="text/javascript" charset="utf-8"></script>
+
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -33,6 +40,7 @@
 
     </head>
     <body class="background-theme">
+
         <div class="theme-bg"></div>
 
         <!-- MAIN MENU -->
@@ -52,204 +60,8 @@
                     <div class="wrapper clearfix">
 
                         <!-- RESUME TAB -->
-                        <div id="resume-tab" class="tab-wrapper">
-
-                            <!-- VISIBLE TAB HEADER -->
-                            <section class="tab">
-                                <div class="tab-header tab-keppel tab-trigger alighleft">
-                                    <div class="tab-icon alighleft">
-                                        <i class="icon resume sprite"></i>
-                                    </div>
-                                    <div class="tab-text alighleft">
-                                        <h4 class="title">Hello<!--Resume--></h4>
-                                    </div>
-                                    <div class="arrow alighleft"></div>
-                                </div>
-                                <i class="tab-collapse tab-trigger sprite alignright"></i>
-                                <div class="download-resume">
-                                    <a href="#">
-                                        <b class="text">Download vCard</b>
-                                        <i class="icon sprite"></i>
-                                    </a>
-                                </div>
-                            </section>
-
-                            <!-- TAB DROPDOWN INNER CONTENT -->
-                            <div class="tab-content">
-                                <div class="content-wrapper twelve columns offset-by-one alpha">
-                                    <section class="content-inner clearfix">
-
-                                        <!-- HISTORY BOX -->
-                                        <div class="five columns alpha">
-                                            <div class="resume-history">
-                                                <h3 class="secondary-heading">Employment</h3>
-                                                <ul class="history-list clearfix">
-
-                                                    <li class="item four columns offset-by-one alpha">
-                                                        <i class="indicator"></i>
-                                                        <div class="main-info clearfix">
-                                                            <h5 class="tertiary-heading title alighleft">Job Name</h5>
-                                                            <h6 class="dates alignright">2010 - 2013</h6>
-                                                        </div>
-                                                        <h6 class="meta-info">Job Position</h6>
-                                                        <p class="description">
-                                                            Sed in viverra felis, semper laoreet eros. Nunc urna diam, lacinia sed varius vitae, posuere eu nunc. Vestibulum a turpis vulputate, volutpat mauris nec.
-                                                        </p>
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- EDUCATION BOX -->
-                                        <div class="five columns omega offset-by-one">
-                                            <div class="resume-history">
-                                                <h3 class="secondary-heading">Education</h3>
-                                                <ul class="history-list clearfix">
-
-                                                    <li class="item four columns offset-by-one alpha">
-                                                        <i class="indicator"></i>
-                                                        <div class="main-info clearfix">
-                                                            <h5 class="tertiary-heading title alighleft">Job Name</h5>
-                                                            <h6 class="dates alignright">2010 - 2013</h6>
-                                                        </div>
-                                                        <h6 class="meta-info">Job Position</h6>
-                                                        <p class="description">
-                                                            Sed in viverra felis, semper laoreet eros. Nunc urna diam, lacinia sed varius vitae, posuere eu nunc. Vestibulum a turpis vulputate, volutpat mauris nec.
-                                                        </p>
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- /HISTORY BOX -->
-
-                                        <!-- SKILLS BOX -->
-                                        <div class="twelve columns alpha omega">
-                                            <div class="tab-skills tab-services">
-                                                <h3 class="secondary-heading">My Skills</h3>
-
-                                                <!-- radial progress bar -->
-
-                                                <ul class="skills-list radial clearfix">
-                                                    <li class="two columns service-item omega">
-                                                        <div class="icon-wrapper">
-                                                            <figure class="service-icon">
-                                                                <img src="http://www.placehold.it/50x50" alt=""/>
-                                                            </figure>
-                                                        </div>
-                                                        <h5 class="tertiary-heading">Service</h5>
-                                                        <div class="skill-progress radial-progress">
-                                                            <input type="text" value="80"
-                                                                   data-width="64" data-height="64"
-                                                                   data-readOnly=true data-thickness=".1"
-                                                                   data-displayInput=false
-                                                                   data-bgColor="#1b1e24" data-fgColor="#fd6566"
-                                                                   class="progress">
-                                                            <b class="value">80%</b>
-                                                        </div>
-                                                    </li>
-                                                    <li class="two columns service-item omega">
-                                                        <div class="icon-wrapper">
-                                                            <figure class="service-icon">
-                                                                <img src="http://www.placehold.it/50x50" alt=""/>
-                                                            </figure>
-                                                        </div>
-                                                        <h5 class="tertiary-heading">Service</h5>
-                                                        <div class="skill-progress radial-progress">
-                                                            <input type="text" value="80"
-                                                                   data-width="64" data-height="64"
-                                                                   data-readOnly=true data-thickness=".1"
-                                                                   data-displayInput=false
-                                                                   data-bgColor="#1b1e24" data-fgColor="#fd6566"
-                                                                   class="progress">
-                                                            <b class="value">80%</b>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-
-                                                <!-- linear progress bar -->
-                                                <!--
-                                                <ul class="skills-list linear clearfix">
-
-                                                    <li class="item clearfix">
-                                                        <div class="skill-heading three columns alpha">
-                                                            <span class="name">Adobe Photoshop</span>
-                                                        </div>
-                                                        <div class="skill-progress linear-progress nine columns omega">
-                                                            <div class="progress-base eight columns alpha omega">
-                                                                <div class="progress-fill red" data-value="90"></div>
-                                                            </div>
-                                                            <div class="progress-value one columns omega">
-                                                                <small>90%</small>
-                                                                <b class="arrow-left"></b>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li class="item clearfix">
-                                                        <div class="skill-heading three columns alpha">
-                                                            <span class="name">Adobe Illustrator</span>
-                                                        </div>
-                                                        <div class="skill-progress linear-progress nine columns omega">
-                                                            <div class="progress-base eight columns alpha omega">
-                                                                <div class="progress-fill blue" data-value="80"></div>
-                                                            </div>
-                                                            <div class="progress-value one columns omega">
-                                                                <small>80%</small>
-                                                                <b class="arrow-left"></b>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li class="item clearfix">
-                                                        <div class="skill-heading three columns alpha">
-                                                            <span class="name">Adobe Flash</span>
-                                                        </div>
-                                                        <div class="skill-progress linear-progress nine columns omega">
-                                                            <div class="progress-base eight columns alpha omega">
-                                                                <div class="progress-fill green" data-value="70"></div>
-                                                            </div>
-                                                            <div class="progress-value one columns omega">
-                                                                <small>70%</small>
-                                                                <b class="arrow-left"></b>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li class="item clearfix">
-                                                        <div class="skill-heading three columns alpha">
-                                                            <span class="name">Adobe After Effects</span>
-                                                        </div>
-                                                        <div class="skill-progress linear-progress nine columns omega">
-                                                            <div class="progress-base eight columns alpha omega">
-                                                                <div class="progress-fill yellow" data-value="90"></div>
-                                                            </div>
-                                                            <div class="progress-value one columns omega">
-                                                                <small>90%</small>
-                                                                <b class="arrow-left"></b>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                </ul>
-                                                -->
-                                            </div>
-                                        </div>
-                                        <!-- /SKILLS BOX -->
-
-                                    </section>
-                                </div>
-                            </div>
-                            <!-- /TAB DROPDOWN INNER CONTENT  -->
-
-                            <i class="tab-collapse tab-trigger icon-close sprite"></i>
-                            <div class="arrow-down"></div>
-                        </div>
+                        <c2resume-tab></c2resume-tab>
                         <!-- /RESUME TAB -->
-
-
-
-
 
                     </div>
                 </div>
@@ -257,11 +69,6 @@
         </div>
 
         <!-- /MAIN CONTAINER -->
-
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
-        <script src="js/jquery.knob.js" type="text/javascript"></script>
-        <script src="fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-        <script src="js/script.js" type="text/javascript"></script>
+        <jquery-libs></jquery-libs>
     </body>
 </html>

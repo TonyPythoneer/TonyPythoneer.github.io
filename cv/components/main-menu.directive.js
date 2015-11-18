@@ -12,9 +12,20 @@
             restrict: 'E',
             scope:{},
             transclude: true,
-            templateUrl: './main-menu/main-menu.directive.html',
+            templateUrl: './components/main-menu.directive.html',
             controller: MainMenuConteroller,
-            controllerAs: 'ctrl'
+            controllerAs: 'ctrl',
+            compile: function compile( tElement, tAttributes) {
+                console.log('mainMenu' + 'compile');
+                return {
+                  pre: function(scope, iElem, iAttrs){
+                    console.log('mainMenu' + ': pre link');
+                  },
+                  post: function(scope, iElem, iAttrs){
+                    console.log('mainMenu' + ': post link');                   
+                  }
+                }
+            }
         };
         return directive;
     };
