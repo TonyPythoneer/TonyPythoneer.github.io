@@ -38,8 +38,8 @@
              iconType: "contact",
              color: "blue"}
         ];
-        self.getMenuItemIcon = getMenuItemIcon;
-        self.getMenuItemColor = getMenuItemColor;
+        self.getIconClass = getIconClass;
+        self.getMenuColorClass = getMenuColorClass;
 
         ////
 
