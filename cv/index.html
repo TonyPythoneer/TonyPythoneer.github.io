@@ -19,6 +19,8 @@
         <script src="./components/visible-tab-header.directive.js" type="text/javascript" charset="utf-8"></script>
         <script src="./components/jquery-libs.directive.js" type="text/javascript" charset="utf-8"></script>
 
+        <script src="./resume/history-box.directive.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./resume/skills-box.directive.js" type="text/javascript" charset="utf-8"></script>
         <script src="./resume/radial-progress-bar.directive.js" type="text/javascript" charset="utf-8"></script>
         <script src="./resume/linear-progress-bar.directive.js" type="text/javascript" charset="utf-8"></script>
 
@@ -90,62 +92,13 @@
                                     <section class="content-inner clearfix">
 
                                         <!-- HISTORY BOX -->
-                                        <div class="five columns alpha">
-                                            <div class="resume-history">
-                                                <h3 class="secondary-heading">Employment</h3>
-                                                <ul class="history-list clearfix">
-
-                                                    <li class="item four columns offset-by-one alpha">
-                                                        <i class="indicator"></i>
-                                                        <div class="main-info clearfix">
-                                                            <h5 class="tertiary-heading title alighleft">Job Name</h5>
-                                                            <h6 class="dates alignright">2010 - 2013</h6>
-                                                        </div>
-                                                        <h6 class="meta-info">Job Position</h6>
-                                                        <p class="description">
-                                                            Sed in viverra felis, semper laoreet eros. Nunc urna diam, lacinia sed varius vitae, posuere eu nunc. Vestibulum a turpis vulputate, volutpat mauris nec.
-                                                        </p>
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <history-box></history-box>
                                         <!-- EDUCATION BOX -->
-                                        <div class="five columns omega offset-by-one">
-                                            <div class="resume-history">
-                                                <h3 class="secondary-heading">Education</h3>
-                                                <ul class="history-list clearfix">
 
-                                                    <li class="item four columns offset-by-one alpha">
-                                                        <i class="indicator"></i>
-                                                        <div class="main-info clearfix">
-                                                            <h5 class="tertiary-heading title alighleft">Job Name</h5>
-                                                            <h6 class="dates alignright">2010 - 2013</h6>
-                                                        </div>
-                                                        <h6 class="meta-info">Job Position</h6>
-                                                        <p class="description">
-                                                            Sed in viverra felis, semper laoreet eros. Nunc urna diam, lacinia sed varius vitae, posuere eu nunc. Vestibulum a turpis vulputate, volutpat mauris nec.
-                                                        </p>
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
                                         <!-- /HISTORY BOX -->
 
                                         <!-- SKILLS BOX -->
-                                        <div class="twelve columns alpha omega">
-                                            <div class="tab-skills tab-services">
-                                                <h3 class="secondary-heading">My Skills</h3>
-
-                                                <!-- radial progress bar -->
-                                                <radial-progress-bar></radial-progress-bar>
-
-                                                <!-- linear progress bar -->
-                                                <linear-progress-bar></linear-progress-bar>
-
-                                            </div>
-                                        </div>
+                                        <skills-box></skills-box>
                                         <!-- /SKILLS BOX -->
 
                                     </section>
