@@ -2,5 +2,5 @@
     'use strict';
 
     angular
-        .module('cv', [])
+        .module('cv', ['angular-svg-round-progress'])
 })();

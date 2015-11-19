@@ -11,6 +11,7 @@
         <meta name="front-end-development-skills" content="javascript typescript angularjs">
         <!-- Javascript -->
         <script src="./js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/roundProgress.min.js" type="text/javascript" charset="utf-8"></script>
 
         <script src="./cv.module.js" type="text/javascript" charset="utf-8"></script>
 
@@ -18,6 +19,7 @@
         <script src="./components/visible-tab-header.directive.js" type="text/javascript" charset="utf-8"></script>
         <script src="./components/jquery-libs.directive.js" type="text/javascript" charset="utf-8"></script>
 
+        <script src="./resume/radial-progress-bar.directive.js" type="text/javascript" charset="utf-8"></script>
         <script src="./resume/linear-progress-bar.directive.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Mobile Specific Meta -->
@@ -137,46 +139,9 @@
                                                 <h3 class="secondary-heading">My Skills</h3>
 
                                                 <!-- radial progress bar -->
-
-                                                <ul class="skills-list radial clearfix">
-                                                    <li class="two columns service-item omega">
-                                                        <div class="icon-wrapper">
-                                                            <figure class="service-icon">
-                                                                <img src="http://www.placehold.it/50x50" alt=""/>
-                                                            </figure>
-                                                        </div>
-                                                        <h5 class="tertiary-heading">Service</h5>
-                                                        <div class="skill-progress radial-progress">
-                                                            <input type="text" value="80"
-                                                                   data-width="64" data-height="64"
-                                                                   data-readOnly=true data-thickness=".1"
-                                                                   data-displayInput=false
-                                                                   data-bgColor="#1b1e24" data-fgColor="#fd6566"
-                                                                   class="progress">
-                                                            <b class="value">80%</b>
-                                                        </div>
-                                                    </li>
-                                                    <li class="two columns service-item omega">
-                                                        <div class="icon-wrapper">
-                                                            <figure class="service-icon">
-                                                                <img src="http://www.placehold.it/50x50" alt=""/>
-                                                            </figure>
-                                                        </div>
-                                                        <h5 class="tertiary-heading">Service</h5>
-                                                        <div class="skill-progress radial-progress">
-                                                            <input type="text" value="80"
-                                                                   data-width="64" data-height="64"
-                                                                   data-readOnly=true data-thickness=".1"
-                                                                   data-displayInput=false
-                                                                   data-bgColor="#1b1e24" data-fgColor="#fd6566"
-                                                                   class="progress">
-                                                            <b class="value">80%</b>
-                                                        </div>
-                                                    </li>
-                                                </ul>
+                                                <radial-progress-bar></radial-progress-bar>
 
                                                 <!-- linear progress bar -->
-
                                                 <linear-progress-bar></linear-progress-bar>
 
                                             </div>

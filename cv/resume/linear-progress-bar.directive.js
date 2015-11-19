@@ -1,7 +1,3 @@
-/*
-<visible-tab-header attr-tab-color-class="red" attr-icon-class="profile">
-</visible-tab-header>
- */
 (function() {
     'use strict';
 
@@ -25,7 +21,6 @@
             var self = this;
             self.progresses = [
                 {skillName: "Backend Web Development", percentage: 90, color: "red"},
-                             //Adobe After Effects
                 {skillName: "Front-end Web Development", percentage: 70, color: "blue"},
                 {skillName: "Database", percentage: 80, color: "green"}
             ]
