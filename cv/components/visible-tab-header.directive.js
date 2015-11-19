@@ -39,36 +39,17 @@
             if (scope.downloadResume === 'true') {
                 $('.download-resume').hide();    
             }
+
         }
 
         function postLink(scope, iElement, iAttrs, controller) {
-            var titleWidth = 0;
-            $('.tab-header > .tab-text').each(function(i, obj) {
-                var width = $(obj).outerWidth();
-                titleWidth = (width > titleWidth) ? width : titleWidth;
-            });
-            $('.tab-header > .tab-text').width(titleWidth);
-
             //rebinding for inital
             $('.tab-trigger').click(function() {
                 var wrapper = $(this).closest('.tab-wrapper');
                 $Dash.toggleTab(wrapper);
-
                 // pull the main content wrapper up when at least one tab is opened
                 if ($('.tab-wrapper').hasClass('open')) {
                     $(this).closest('.main-content > .wrapper').addClass('up');
-                    //rebinding for re-create dom
-                    $('.tab-trigger').click(function() {
-                        var wrapper = $(this).closest('.tab-wrapper');
-                        $Dash.toggleTab(wrapper);
-
-                        // pull the main content wrapper up when at least one tab is opened
-                        if ($('.tab-wrapper').hasClass('open')) {
-                            $(this).closest('.main-content > .wrapper').addClass('up');
-                        } else {
-                            $(this).closest('.main-content > .wrapper').removeClass('up');
-                        }
-                    });
                 } else {
                     $(this).closest('.main-content > .wrapper').removeClass('up');
                 }
