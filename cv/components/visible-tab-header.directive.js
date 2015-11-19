@@ -16,25 +16,65 @@
             restrict: 'E',
             scope:{
                 attrTabColorClass:'@',
-                attrIconClass:'@'
+                attrIconClass:'@',
+                downloadResume:'@'
             },
             templateUrl: './components/visible-tab-header.directive.html',
             transclude: true,
-            link: link,
-            //controller: VisibleTabHeaderConteroller,
-            //controllerAs: 'ctrl'
+            compile: compile,
+            controller: VisibleTabHeaderConteroller,
+            controllerAs: 'ctrl'
         };
         return directive;
 
         ///
+        function compile(tElement, tAttrs, transclude) {
+            return {
+                pre: preLink,
+                post: postLink                
+            }
+        }
 
-        function link (scope, element, attrs){
-            console.log(scope)
-            console.log(element)
+        function preLink(scope, iElement, iAttrs, controller) {
+            if (scope.downloadResume === 'true') {
+                $('.download-resume').hide();    
+            }
+        }
+
+        function postLink(scope, iElement, iAttrs, controller) {
+            var titleWidth = 0;
+            $('.tab-header > .tab-text').each(function(i, obj) {
+                var width = $(obj).outerWidth();
+                titleWidth = (width > titleWidth) ? width : titleWidth;
+            });
+            $('.tab-header > .tab-text').width(titleWidth);
+
+            //rebinding for inital
+            $('.tab-trigger').click(function() {
+                var wrapper = $(this).closest('.tab-wrapper');
+                $Dash.toggleTab(wrapper);
+
+                // pull the main content wrapper up when at least one tab is opened
+                if ($('.tab-wrapper').hasClass('open')) {
+                    $(this).closest('.main-content > .wrapper').addClass('up');
+                    //rebinding for re-create dom
+                    $('.tab-trigger').click(function() {
+                        var wrapper = $(this).closest('.tab-wrapper');
+                        $Dash.toggleTab(wrapper);
+
+                        // pull the main content wrapper up when at least one tab is opened
+                        if ($('.tab-wrapper').hasClass('open')) {
+                            $(this).closest('.main-content > .wrapper').addClass('up');
+                        } else {
+                            $(this).closest('.main-content > .wrapper').removeClass('up');
+                        }
+                    });
+                } else {
+                    $(this).closest('.main-content > .wrapper').removeClass('up');
+                }
+            });
         }
     };
-
-
 
     VisibleTabHeaderConteroller.$inject=['$scope'];
 
@@ -47,22 +87,15 @@
         ///
 
         function getIconClass(iconType){
-            var classes = {
-                icon: true,
-                sprite: true
-            };
-            classes[iconType] = true;
-            return classes;
+            var class_ = {};
+            class_[iconType] = true;
+            return class_;
         };
 
         function getTabColorClass(color){
-            var classes = {
-                "tab-header": true,
-                "tab-trigger": true,
-                "alighleft": true
-            };
-            classes["tab-" + color] = true;
-            return classes;
+            var class_ = {};
+            class_["tab-" + color] = true;
+            return class_;
         };
 
     };

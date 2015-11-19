@@ -1,10 +1,18 @@
-<div class="tab-header tab-keppel tab-trigger alighleft">
-    <div class="tab-icon alighleft">
-        <i class="icon resume sprite"></i>
+<section class="tab">
+    <div class="tab-trigger tab-header alighleft" ng-class="ctrl.getTabColorClass(attrTabColorClass)">
+        <div class="tab-icon alighleft">
+            <i class="icon sprite" ng-class="ctrl.getIconClass(attrIconClass)"></i>
+        </div>
+        <div class="tab-text alighleft">
+            <h4 class="title">Hello<!--Resume--></h4>
+        </div>
+        <div class="arrow alighleft"></div>
     </div>
-    <div class="tab-text alighleft">
-        <h4 class="title">1023</h4>
+    <i class="tab-collapse tab-trigger sprite alignright"></i>
+    <div class="download-resume hidden">
+        <a href="#">
+            <b class="text">Download Resume</b>
+            <i class="icon sprite"></i>
+        </a>
     </div>
-    <div class="arrow alighleft"></div>
-</div>
-<i class="tab-collapse tab-trigger sprite alignright"></i>
+</section>
