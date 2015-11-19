@@ -25,18 +25,20 @@
     function HistoryBoxController () {
         var self = this;
         self.jobs = [
-            {officeName: "123", 
+            {officeName: "ThroughTek Co., Ltd.", 
              jobDate: "2014 Dec - Now", //"2014 Dec - Now"
              jobPosition: "Backend Web Developer",
-             description: "Sed in viverra felis, semper laoreet eros. Nunc urna diam, lacinia \
-                           sed varius vitae, posuere eu nunc. Vestibulum a turpis vulputate, \
-                           volutpat mauris nec."}
+             description: "In charge of making the server, application, and database communicate \
+                           with each other. Establish RESTful APIs about account and device \
+                           managements as cloud infrastructure for business."}
         ];
         self.educations = [
             {schoolName: "National United University", 
              schoolDate: "2010 - 2014", 
              department: "Electronic Engineering",
-             description: "temp"}
+             description: "Devoting to depolying backend web service as infrastructure and design \
+                           front-end web server as WebUI. Initiating a smart house as IOT (internet of \
+                           thing) prototype to solve real-world problems."}
         ]
 
     }
