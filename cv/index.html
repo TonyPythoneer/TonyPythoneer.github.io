@@ -19,6 +19,7 @@
         <script src="./components/visible-tab-header.directive.js" type="text/javascript" charset="utf-8"></script>
         <script src="./components/jquery-libs.directive.js" type="text/javascript" charset="utf-8"></script>
 
+        <script src="./resume/resume-tab.directive.js" type="text/javascript" charset="utf-8"></script>
         <script src="./resume/history-box.directive.js" type="text/javascript" charset="utf-8"></script>
         <script src="./resume/skills-box.directive.js" type="text/javascript" charset="utf-8"></script>
         <script src="./resume/radial-progress-bar.directive.js" type="text/javascript" charset="utf-8"></script>
@@ -64,51 +65,7 @@
                     <div class="wrapper clearfix">
 
                         <!-- RESUME TAB -->
-                        <div id="resume-tab" class="tab-wrapper">
-
-                            <!-- VISIBLE TAB HEADER -->
-                            <section class="tab">
-                                <div class="tab-header tab-keppel tab-trigger alighleft">
-                                    <div class="tab-icon alighleft">
-                                        <i class="icon resume sprite"></i>
-                                    </div>
-                                    <div class="tab-text alighleft">
-                                        <h4 class="title">Hello<!--Resume--></h4>
-                                    </div>
-                                    <div class="arrow alighleft"></div>
-                                </div>
-                                <i class="tab-collapse tab-trigger sprite alignright"></i>
-                                <div class="download-resume">
-                                    <a href="#">
-                                        <b class="text">Download Resume</b>
-                                        <i class="icon sprite"></i>
-                                    </a>
-                                </div>
-                            </section>
-
-                            <!-- TAB DROPDOWN INNER CONTENT -->
-                            <div class="tab-content">
-                                <div class="content-wrapper twelve columns offset-by-one alpha">
-                                    <section class="content-inner clearfix">
-
-                                        <!-- HISTORY BOX -->
-                                        <history-box></history-box>
-                                        <!-- EDUCATION BOX -->
-
-                                        <!-- /HISTORY BOX -->
-
-                                        <!-- SKILLS BOX -->
-                                        <skills-box></skills-box>
-                                        <!-- /SKILLS BOX -->
-
-                                    </section>
-                                </div>
-                            </div>
-                            <!-- /TAB DROPDOWN INNER CONTENT  -->
-
-                            <i class="tab-collapse tab-trigger icon-close sprite"></i>
-                            <div class="arrow-down"></div>
-                        </div>
+                        <resume-tab></resume-tab>
                         <!-- /RESUME TAB -->
 
                     </div>
