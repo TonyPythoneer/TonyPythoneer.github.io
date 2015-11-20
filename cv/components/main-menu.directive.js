@@ -32,12 +32,14 @@
                 {href: "#resume-tab",
                  iconType: "resume",
                  color: "keppel"},
+                 /*
                 {href: "#portfolio-tab",
                  iconType: "portfolio",
                  color: "yellow"},
                 {href: "#contact-tab",
                  iconType: "contact",
                  color: "blue"}
+                 */
             ];
             self.getIconClass = getIconClass;
             self.getMenuColorClass = getMenuColorClass;
