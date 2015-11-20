@@ -3,7 +3,7 @@
 
     angular
         .module('cv')
-        .directive('profileTab', profileTab);
+        .directive('protfolioTab', protfolioTab);
 
     ////
 
@@ -11,7 +11,7 @@
         var directive = {
             restrict: 'E',
             scope: {},
-            templateUrl: './profile/profile-tab.directive.html',
+            templateUrl: './protfolio/protfolio-tab.directive.html',
             transclude: true
         };
         return directive;

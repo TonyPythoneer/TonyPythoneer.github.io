@@ -43,6 +43,14 @@
         }
 
         function postLink(scope, iElement, iAttrs, controller) {
+            /*
+            console.log("postLink")
+            var tabColor = '.tab-' + scope.attrTabColorClass
+            var query = document.querySelector(".tab-trigger")
+            console.log(document.querySelector("i.tab-trigger"));
+            //console.log(iElement)
+            //iElement.find('a').on('click', clickPrevOrNextBtn);
+
             //rebinding for inital
             $('.tab-trigger').click(function() {
                 var wrapper = $(this).closest('.tab-wrapper');
@@ -54,16 +62,19 @@
                     $(this).closest('.main-content > .wrapper').removeClass('up');
                 }
             });
+            */
+
         }
     };
 
-    VisibleTabHeaderConteroller.$inject=['$scope'];
+    VisibleTabHeaderConteroller.$inject=['$scope','clickTabFactory'];
 
-    function VisibleTabHeaderConteroller($scope) {
+    function VisibleTabHeaderConteroller($scope,clickTabFactory) {
         var self = this;
         self.title = (function(s){return s && s[0].toUpperCase() + s.slice(1);})($scope.attrIconClass)
         self.getIconClass = getIconClass;
         self.getTabColorClass = getTabColorClass;
+        self.clickTab = clickTabFactory.clickTab
 
         ///
 

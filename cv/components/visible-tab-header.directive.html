@@ -1,5 +1,7 @@
 <section class="tab">
-    <div class="tab-trigger tab-header alighleft" ng-class="ctrl.getTabColorClass(attrTabColorClass)">
+    <div class="tab-trigger tab-header alighleft"
+        ng-class="ctrl.getTabColorClass(attrTabColorClass)"
+        ng-click="ctrl.clickTab(attrTabColorClass)">
         <div class="tab-icon alighleft">
             <i class="icon sprite" ng-class="ctrl.getIconClass(attrIconClass)"></i>
         </div>
@@ -8,7 +10,8 @@
         </div>
         <div class="arrow alighleft"></div>
     </div>
-    <i class="tab-collapse tab-trigger sprite alignright"></i>
+    <i class="tab-collapse tab-trigger sprite alignright"
+        ng-click="ctrl.clickTab(attrTabColorClass)"></i>
     <div class="download-resume hidden">
         <a href="#">
             <b class="text">Download Resume</b>

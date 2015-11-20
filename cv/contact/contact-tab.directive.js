@@ -3,15 +3,15 @@
 
     angular
         .module('cv')
-        .directive('profileTab', profileTab);
+        .directive('contactTab', contactTab);
 
     ////
 
-    function profileTab() {
+    function contactTab() {
         var directive = {
             restrict: 'E',
             scope: {},
-            templateUrl: './profile/profile-tab.directive.html',
+            templateUrl: './contact/contact-tab.directive.html',
             transclude: true
         };
         return directive;
