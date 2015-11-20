@@ -19,6 +19,10 @@
         <script src="./components/visible-tab-header.directive.js" type="text/javascript" charset="utf-8"></script>
         <script src="./components/jquery-libs.directive.js" type="text/javascript" charset="utf-8"></script>
 
+        <script src="./profile/profile-tab.directive.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./profile/profile-box.directive.js" type="text/javascript" charset="utf-8"></script>
+
+
         <script src="./resume/resume-tab.directive.js" type="text/javascript" charset="utf-8"></script>
         <script src="./resume/history-box.directive.js" type="text/javascript" charset="utf-8"></script>
         <script src="./resume/skills-box.directive.js" type="text/javascript" charset="utf-8"></script>
@@ -41,8 +45,6 @@
                 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
-
-
     </head>
     <body class="background-theme">
 
@@ -64,8 +66,14 @@
                 <div class="main-content">
                     <div class="wrapper clearfix">
 
+                        <!-- PROFILE TAB -->
+                        <profile-tab></profile-tab>
+                        <!-- /PROFILE TAB -->
+
                         <!-- RESUME TAB -->
+                        <!--
                         <resume-tab></resume-tab>
+                        -->
                         <!-- /RESUME TAB -->
 
                     </div>

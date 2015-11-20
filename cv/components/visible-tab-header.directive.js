@@ -31,13 +31,13 @@
         function compile(tElement, tAttrs, transclude) {
             return {
                 pre: preLink,
-                post: postLink                
+                post: postLink
             }
         }
 
         function preLink(scope, iElement, iAttrs, controller) {
-            if (scope.downloadResume === 'true') {
-                $('.download-resume').hide();    
+            if (scope.downloadResume === 'false') {
+                $('.download-resume').hide();
             }
 
         }
