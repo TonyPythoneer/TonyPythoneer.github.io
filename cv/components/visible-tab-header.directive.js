@@ -1,7 +1,3 @@
-/*
-<visible-tab-header attr-tab-color-class="red" attr-icon-class="profile">
-</visible-tab-header>
- */
 (function() {
     'use strict';
 
