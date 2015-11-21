@@ -362,8 +362,9 @@ select{
 ================================================== */
 
 /* index.html */
+
 .main-content > .wrapper{
-    margin-top: 25%;
+    margin-top: 7%;
     -webkit-transition: margin-top 0.6s 1s ease-in;
     -moz-transition:    margin-top 0.6s 1s ease-in;
     -ms-transition:     margin-top 0.6s 1s ease-in;
@@ -371,8 +372,9 @@ select{
 }
 
 .main-content > .wrapper.up{
-    margin-top: 10%;
+    margin-top: 7%;
 }
+
 
 /* main menu */
 .main-menu.hidden{
@@ -509,6 +511,7 @@ section.tab{
 }
 
 /* tab right arrow */
+/*
 section.tab:after{
     position: absolute;
     width: 0;
@@ -530,6 +533,7 @@ section.tab:after{
     -o-transition:      all 0.4s 0.4s ease-in;
     transition:         all 0.4s 0.4s ease-in;
 }
+*/
 .tab-wrapper.open > section.tab:after{
     border-left: 0 solid;
     right: 0;
