@@ -1,0 +1,18 @@
+<ul class="skills-list linear clearfix">
+    <li class="item clearfix" ng-repeat="progress in ctrl.progresses track by $index">
+        <div class="skill-heading three columns alpha">
+            <span class="name">{{progress.skillName}}</span>
+        </div>
+        <div class="skill-progress linear-progress nine columns omega">
+            <div class="progress-base eight columns alpha omega">
+                <div class="progress-fill"
+                    data-value="{{progress.percentage}}"
+                    ng-class="ctrl.getProgressColorClass(progress.color)"></div>
+            </div>
+            <div class="progress-value one columns omega">
+                <small>{{progress.percentage}}%</small>
+                <b class="arrow-left"></b>
+            </div>
+        </div>
+    </li>
+</ul>

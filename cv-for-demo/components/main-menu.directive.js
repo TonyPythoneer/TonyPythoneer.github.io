@@ -23,6 +23,10 @@
         function MainMenuController() {
             var self = this;
             self.menuItems = [
+                /*
+                {href: "#*",
+                 iconType: "menu",
+                 color: "black"},*/
                 {href: "#profile-tab",
                  iconType: "profile",
                  color: "red"},

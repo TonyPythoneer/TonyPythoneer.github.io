@@ -1,0 +1,29 @@
+<ul class="skills-list radial clearfix">
+    <li class="two columns service-item omega" ng-repeat="progress in ctrl.progresses track by $index">
+        <div class="icon-wrapper">
+            <figure class="service-icon">
+                <img ng-src="./resume/img/{{progress.skillName}}-icon-50x50.png" alt=""/>
+            </figure>
+        </div>
+        <h5 class="tertiary-heading">{{ctrl.toTitle(progress.skillName)}}</h5>
+        <div class="progress-wrapper">
+            <div class="progress" style="transform: translateY(230%) translateX(0%); font-size: 12px;">{{progress.percentage}}%</div>
+            <div
+                round-progress
+                max="100"
+                current="progress.percentage"
+                color="{{progress.color}}"
+                bgcolor="#1b1e24"
+                radius="32"
+                stroke="10"
+                semi="false"
+                rounded="false"
+                clockwise="true"
+                responsive="false"
+                duration="800"
+                animation="easeInOutQuart"></div>
+        </div>
+    </li>
+</ul>
+
+

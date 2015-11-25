@@ -1,0 +1,8 @@
+<div id="resume-tab" class="tab-wrapper">
+
+-->
+
+<div id="resume-tab" class="tab-wrapper open">
+
+才會預設展開
+這樣才能擷取
