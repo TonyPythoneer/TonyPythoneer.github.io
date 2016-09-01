@@ -1,32 +1,22 @@
-# Hello! I'm Tony. I am Pythoneer.
+# About me
 
-Summary
+I have nearly 2 years in web development, used in Python/Django.
 
-> hehe~
+You can refer this [cv](http://tonypythoneer.github.io/cv-for-demo/)
 
 ---
 
-# My repositories
+# Accepted PR
 
-- [My repositories](#my-repositories)
-  - [Awesome series](#awesome-series)
-    - [awesome-django-examples](https://github.com/TonyPythoneer/awesome-django-examples)
-    - [awesome-flask-examples](https://github.com/TonyPythoneer/awesome-flask-examples)
-    - [awesome-nodejs-examples](https://github.com/TonyPythoneer/awesome-nodejs-examples)
-    - [awesome-angularjs-examples](https://github.com/TonyPythoneer/awesome-angularjs-examples)
-    - [awesome-python-utils](https://github.com/TonyPythoneer/awesome-python-utils)
-    - [awesome-javascript-utils](https://github.com/TonyPythoneer/awesome-javascript-utils)
+## DefinitelyTyped
 
+* [[DefinitelyTyped] - Add "exitCode" in Process for Node-4.x](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/10778)
 
-## Awesome series
+* [[DefinitelyTyped] - Add "destroy" in http.IncomingMessage for Node-4.x](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/10713)
 
-Exhibit my repositories according to my `awesome` development experience. I am willing to share selflessly for here.
+* [[DefinitelyTyped] - Enhance test file fro Express](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/10685)
+* [[DefinitelyTyped] - Add "destroy" in http.IncomingMessage for Node](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/10669)
 
-  - [awesome-django-examples](https://github.com/TonyPythoneer/awesome-django-examples)
-  - [awesome-flask-examples](https://github.com/TonyPythoneer/awesome-flask-examples)
-  - [awesome-nodejs-examples](https://github.com/TonyPythoneer/awesome-nodejs-examples)
-  - [awesome-angularjs-examples](https://github.com/TonyPythoneer/awesome-angularjs-examples)
-  - [awesome-python-utils](https://github.com/TonyPythoneer/awesome-python-utils)
-  - [awesome-javascript-utils](https://github.com/TonyPythoneer/awesome-javascript-utils)
+* [[DefinitelyTyped] - Add "destroy" in http.IncomingMessage for Node](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/10669)
 
-
+* [[DefinitelyTyped] - Add "finished" property in http.ServerResponse for Node](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/10418)
