@@ -8,6 +8,9 @@ You can refer this [cv](http://tonypythoneer.github.io/cv-for-demo/)
 
 # Accepted PR
 
+* [Contributions for DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped/graphs/contributors?from=2016-08-02)
+* [Commits history for DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped/commits?author=TonyPythoneer)
+
 ## DefinitelyTyped
 
 * [[node] - Test that imported and global console are same for Node v4 & v6](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/11062)
