@@ -8,9 +8,13 @@ You can refer this [CV](http://tonypythoneer.github.io/cv-for-demo/)
 
 # Contributions for open source
 
-* [DefinitelyTyped](#DefinitelyTyped)
+* [DefinitelyTyped](#definitelytyped)
 
 ## DefinitelyTyped
+
+I consider `TypeSript` is the most useful transpiler in JS. It's a strict superset of JavaScript because it offers not only `ES6/ES7` but also `typed`. Personlly, it's very better than `Babel`.
+
+But it's diffcult to evangelize developers, I am in order to prove that I love TypeSript. Therefore, I start to contribute `DefinitelyTyped` to improve defintion.
 
 My Contributions:
   * Maintain nodejs defintion
