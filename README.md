@@ -17,8 +17,8 @@ I consider `TypeSript` is the most useful transpiler in JS. It's a strict supers
 But it's diffcult to evangelize developers, I am in order to prove that I love TypeSript. Therefore, I start to contribute `DefinitelyTyped` to improve defintion.
 
 My Contributions:
-  * Maintain nodejs defintion
-  * Create pug defintion
+  * [Maintain nodejs defintion](https://github.com/DefinitelyTyped/DefinitelyTyped/pulls?utf8=%E2%9C%93&q=%5Bnode%5D%20in%3Atitle%20is%3Amerged%20is%3Apr%20author%3ATonyPythoneer%20)
+  * [Create pug defintion](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/11258)
 
 Reference:
 
