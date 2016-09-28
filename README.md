@@ -22,8 +22,8 @@ My Contributions:
 
 Reference:
 
-  * [Contributions]: 44 commits / 1,330 ++ / 519 -- by 2016/9/17
-  * [Merge PRs]: Total 32 -- by 2016/9/17
+  * [Contributions]: 73 commits / 3,351 ++ / 1,119 -- / #12 by 2016/9/28
+  * [Merge PRs]: Total 47 -- by 2016/9/28
   * [Commits]: This is my commit history in `DefinitelyTyped`.
 
   [Contributions]: <https://github.com/DefinitelyTyped/DefinitelyTyped/graphs/contributors?from=2016-08-02>
