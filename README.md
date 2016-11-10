@@ -2,8 +2,6 @@
 
 I have nearly 2 years in web development, used in Python/Django.
 
-You can refer this [CV](http://tonypythoneer.github.io/cv-for-demo/)
-
 ---
 
 # Contributions for open source
