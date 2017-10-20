@@ -349,7 +349,7 @@ han: false
 # Disqus
 disqus:
   enable: true
-  shortname: TonyPythoneer
+  shortname: tonypythoneer-blog
   count: true
 
 # Hypercomments
